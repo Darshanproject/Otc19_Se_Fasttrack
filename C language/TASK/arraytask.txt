@@ -1,0 +1,19 @@
+you have to take input from users ? 10
+take even and add them all and show it in end
+take odd and add them all and show it in end
+show how many even numbers are there 
+show how many odd numbers are there
+show me which numbers are even
+show me which numbers are odd
+
+
+ask user how many table dose he/she wants to print ?
+ask user which tables dose he/she wants
+1
+2
+3
+4
+56
+12
+24
+show the sutable output 
