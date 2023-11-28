@@ -1,0 +1,71 @@
+syntax:
+truncate  table_name
+TRUNCATE students;
+Syntax:
+drop table table_name
+DROP TABLE students
+
+
+Syntax:
+alter table table_name modify new name new datatype
+alter table employees modify id int primery key auto_increment;
+
+INSERT INTO employees (name,surname,salary,Dpt) VALUES('Meet','Desani',25000,
+'Mern Stack Developer'),('Jaishv','Patel',35000,'Backend Developer'),
+('Karn','Chnadria',45000,'Frontend Developer'),('Harsh','Savala',55000,'HR'),
+('Akshil','Chnadria',45000,'Designer');
+
+Syntax :
+alert table table_name add Column_name data_type size
+
+ALTER TABLE employees ADD mobilenumbe bigint(10) NOT NULL;
+
+Syntax:
+update table table_name column_name set data where condtion
+UPDATE employees SET mobilenumbe=9512365894 WHERE id=2;   
+
+Created table of tops
+
+CREATE table tops(
+	id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	name varchar(20) NOT NULL,
+    tech varchar(20) NOT NULL,
+    joiningdate date NOT NULL
+);
+
+INSERT INTO `tops` (`id`, `name`, `tech`, `joiningdate`) VALUES (NULL, 'akshil', 'Python', '2020-11-01'), (NULL, 'harsh', 'FrontEnd', '2016-11-01'), (NULL, 'karn', 'php', '2023-10-01'), (NULL, 'Jaishv', 'Database', '2021-11-01');
+
+
+
+SELECT * FROM tops ;
+
+SELECT (name) FROM `tops` 
+
+SELECT name,tech FROM `tops` 
+SELECT SUM(salary) FROM employees;
+SELECT SUM(salary) AS 'Total Salary' FROM employees;
+SELECT MAX(salary) FROM `employees` 
+SELECT MAX(salary),name FROM `employees`
+ALTER TABLE employees DROP mobilenumbe;
+
+
+CREATE table movies(
+	M_name varchar (20)PRIMARY KEY NOT NULL,
+    hero varchar(10) NOT NULL
+);
+
+
+
+
+frogine key cloumn_name refernces parent_table 
+
+
+CREATE table songs(
+	Movie_name varchar(20) PRIMARY KEY NOT NULL,
+	Songs varchar(20) NOT NULL,
+	m_year int(20) NOT NULL
+);
+
+INSERT INTO `songs` (`Movie_name`, `Songs`, `m_year`, `m_key`) VALUES ('spider man', 'Kesariya', '2002', 'SpiderMan'),
+ ('Iron Man', 'Zubedubi', '2008', 'Iron Man'), 
+('Chota Bheem', 'Chota Bheeem', '2008', 'Chota Bheem');
