@@ -1,0 +1,20 @@
+ALTER  TABLE Songs ADD Column_name datatype FOREIGN KEY () REFERENCES movies(Movie_name)
+SELECT movies.M_name, songs.Songs FROM  movies INNER JOIN songs ON
+movies.M_name = songs.Movie_name;
+
+
+CREATE TABLE students(
+	name varchar(20) PRIMARY KEY NOT NULL,
+    tech varchar(30) NOT NULL,
+	date_started date NOT NULL,
+	Duration varchar(20) NOT NULL
+);
+
+
+CREATE TABLE institute( tech varchar(20) PRIMARY KEY NOT null, name_f varchar(20) 
+NOT NULL, s_name varchar(20), FOREIGN KEY(s_name) REFERENCES students(name) );
+
+INSERT INTO `students` (`name`, `tech`, `date_started`, `Duration`) VALUES 
+('Jaishav', 'Python', '2023-10-19', '6months'), 
+('Meet', 'Nodejs', '2023-10-19', '4months'),
+ ('Mark', 'php', '2023-11-16', '5months');
